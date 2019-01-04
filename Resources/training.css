@@ -1,0 +1,28 @@
+.training-header {
+	background-image: linear-gradient(rgba(81, 114, 226, 0.5), rgba(0, 0, 0, 0.9)), url(BG-Images/east-london.jpg);
+	height: 50vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:bottom;
+	background-attachment: fixed;
+	border-bottom: 5px solid #0000f5;
+}
+
+.training-text {
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-15%, -240%);
+	font-size: 110%;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.section-compliance p {
+	font-size: 85%;
+	width: 90%;
+	margin-top: 20px;
+	padding: 5px;
+}
