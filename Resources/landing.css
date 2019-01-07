@@ -1,0 +1,289 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #fff;
+	overflow-x: hidden;
+	color: #5b7bd3;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+.logo {
+	height: 200px;
+	width: auto;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-45%, -140%);
+	transform: translate(-45%, -140%);
+	margin: 0;
+	position: absolute;
+}
+
+.fc-picture {
+	height: 200px;
+	width: 300px;
+	margin: 0;
+	position: absolute;
+	top: 120%;
+	left: 25%;
+	-webkit-transform: translate(-25%, -250%);
+	transform: translate(-25%, -250%);
+	border: 5px solid #5b7bd3;
+	opacity: 1;
+	display: block;
+	-webkit-transition: .5s ease;
+	transition: .5s ease;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.inside1 {
+	-webkit-transition: .5s ease;
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 72%;
+	left: 26%;
+	-webkit-transform: translate(-15%, -155%);
+	transform: translate(-15%, -155%);
+	text-align:center;
+	margin: 0 10px;
+	font-size: 120%;
+}
+
+.consult-picture {
+	height: 200px;
+	width: 300px;
+	margin: 0;
+	position: absolute;
+	top: 120%;
+	left: 65%;
+	-webkit-transform: translate(-28%, -250%);
+	transform: translate(-28%, -250%);
+	border: 5px solid #5b7bd3;
+	opacity: 1;
+	display: block;
+	-webkit-transition: .5s ease;
+	transition: .5s ease;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.inside2 {
+	-webkit-transition: .5s ease;
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 75%;
+	left: 68%;
+	-webkit-transform: translate(-35%, -272%);
+	transform: translate(-35%, -272%);
+	text-align: center;
+	font-size: 120%;
+}
+
+.image-container:hover .fc-picture,
+.image-container:hover .consult-picture {
+	opacity: 0.3;
+}
+
+.image-container:hover .inside1,
+.image-container:hover .inside2 {
+	opacity: 1;
+}
+
+.image-container a:link,
+.image-container a:visited {
+	text-decoration: none;
+	color: #5b7bd3;
+}
+
+.vl {
+	margin: 0;
+	position: absolute;
+	border-left: 2px solid #5b7bd3;
+	border-right: 2px solid #4a4a4a;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-30%, -25%);
+	transform: translate(-30%, -25%);
+}
+
+/*****************************************/
+/********MEDIA QUERIES******************/
+/************************************/
+
+/* big tablets to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px){
+	.fc-picture {
+	top: 120%;
+	left: 23%;
+	}
+	
+.inside1 {
+	left: 24%;
+	}
+
+.consult-picture {
+	top: 120%;
+	}
+}
+
+/* small tablet to big tablet 768px to 1023px */
+@media only screen and (max-width: 1023px){
+	.fc-picture {
+	left: 20%;
+	top: 120%;
+	}
+	.consult-picture {
+	top: 120%;
+}
+	.inside1 {
+	left: 22%;
+	}
+	.inside2 {
+	left: 70%;
+}
+}
+
+@media only screen and (max-width: 850px){
+		.fc-picture {
+		left: 18%;
+	}
+	.inside1 {
+		left: 20%;
+	}
+}
+
+/* small phones to small tablets 481px to 767px*/
+@media only screen and (max-width: 767px){
+	.logo {
+	height: 150px;
+	top: 40%;
+	}
+
+.fc-picture {
+	height: 150px;
+	width: 220px;
+	top: 105%;
+	left: 20%;
+	opacity: 1;
+	}
+
+.inside1 {
+	opacity: 1;
+	top: 90%;
+	left: 20%;
+	font-size: 100%;
+	}
+
+.consult-picture {
+	height: 150px;
+	width: 220px;
+	top: 105%;
+	left: 66%;
+	}
+
+.inside2 {
+	opacity: 1;
+	top: 93%;
+	left: 70%;
+	font-size: 100%;
+	}
+}
+
+@media only screen and (max-width: 625px){
+	.vl {
+	visibility: hidden;
+	}
+	.fc-picture {
+	top: 95%;
+}
+	.inside1 {
+	top: 80%;
+}
+	.consult-picture {
+	top: 95%;
+}
+	.inside2 {
+	top: 83%;
+}
+}
+
+@media only screen and (max-width: 525px){
+.logo {
+	height: 110px;
+	top: 30%;
+	}
+
+.fc-picture {
+	height: 110px;
+	width: 190px;
+	top: 70%;
+	left: 40%;
+	opacity: 1;
+	}
+
+.inside1 {
+	opacity: 1;
+	top: 60%;
+	left: 40%;
+	font-size: 80%;
+	}
+
+.consult-picture {
+	height: 110px;
+	width: 190px;
+	top: 105%;
+	left: 42%;
+	}
+
+.inside2 {
+	opacity: 1;
+	top: 97%;
+	left: 47%;
+	font-size: 80%;
+	}
+}
+
+@media only screen and (max-width: 420px){
+.logo {
+	height: 150px;
+	top: 38%;
+}
+.fc-picture {
+	height: 120px;
+	width: 195px;
+	top: 78%;
+	left: 40%;
+	}
+
+.inside1 {
+	opacity: 1;
+	top: 65%;
+	left: 40%;
+	font-size: 80%;
+	}
+
+.consult-picture {
+	height: 125px;
+	width: 195px;
+	top: 112%;
+	left: 42%;
+	}
+
+.inside2 {
+	opacity: 1;
+	top: 100%;
+	left: 47%;
+	font-size: 80%;
+	}
+}

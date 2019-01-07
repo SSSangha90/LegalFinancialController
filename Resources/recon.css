@@ -1,0 +1,77 @@
+html,
+body {
+	background-color: #d3d3d3;
+	overflow-x: hidden;
+	color: #131313;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+.recon-header {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(81, 114, 226, 0.5)), to(rgba(0, 0, 0, 0.9))), url(BG-Images/london-bridge.jpg);
+	background-image: linear-gradient(rgba(81, 114, 226, 0.5), rgba(0, 0, 0, 0.9)), url(BG-Images/london-bridge.jpg);
+	height: 50vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center;
+	background-attachment: fixed;
+	border-bottom: 5px solid #0000f5;
+}
+
+.heading-recon {
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-25%, -240%);
+	transform: translate(-25%, -240%);
+	font-size: 110%;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.section-compliance p {
+	font-size: 85%;
+	width: 90%;
+	margin-top: 20px;
+	padding: 5px;
+}
+
+.section-compliance {
+	background-color: #f4f2ee;
+}
+
+/********MEDIA QUERIES******/
+
+@media only screen and (max-width: 1023px){
+	.section-compliance {
+	height: 50vh;
+}
+	.heading-text {
+	width: 100%;
+}
+}
+
+@media only screen and (max-width: 725px){
+	h1 {
+	padding: 0 5%;
+}
+}
+
+@media only screen and (max-width: 725px){
+	h1 {
+	padding: 0 10%;
+	font-size: 150%;
+}
+	.section-compliance {
+	height: 60vh;
+}
+}
+
+
+
+
+
