@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: #d3d3d3;
+	color: #131313;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+	width: 100%;
+	height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+img.logo{
+	margin-left: .5%;
+}
+
+.recon-header {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(81, 114, 226, 0.5)), to(rgba(0, 0, 0, 0.9))), url(BG-Images/london-bridge-min.jpg);
+	background-image: linear-gradient(rgba(81, 114, 226, 0.5), rgba(0, 0, 0, 0.9)), url(BG-Images/london-bridge-min.jpg);
+	height: 50vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:bottom;
+	background-attachment: fixed;
+	border-bottom: 5px solid #0000f5;
+}
+
+.heading-text {
+	position: absolute;
+	width: 100%;
+	top: 30%;
+	font-size: 110%;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 0 30%;
+}
+
+.section-compliance p {
+	font-size: 85%;
+	width: 90%;
+	margin-top: 20px;
+	padding: 5px;
+}
+
+.section-compliance {
+	background-color: #f4f2ee;
+}
+
+.footer-nav {
+	list-style: none;
+	float: left;
+	padding: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+	text-decoration: none;
+	color: #e8e8e8;
+	font-size: 70%;
+}
+
+.social-links {
+	list-style: none;
+	float: right;
+	color: #e8e8e8;
+}
+
+.footer-nav li,
+.social-links li {
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+.copyright {
+	color: #e8e8e8;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 30%;
+	font-size: 70%;
+}
+
+ion-icon {
+	font-size: 20px;
+}
+
+section.footer {
+	padding: 0;
+}
+
+
+/****MEDIA QUERIES*****/
+
+@media only screen and (max-width: 1200px){
+	.row{
+		padding: 0 2%;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	body, html {
+		font-size: 95%;
+		overflow-x: hidden;
+	}
+	.heading-text {
+	width: 100%;
+	top: 35%;
+}
+	section {
+		padding: 30px 0;
+	}
+	.row {
+	padding: 0 2%;
+}
+}
+
+@media only screen and (max-width: 775px){
+	body {
+		font-size: 90%;
+	}
+	section{
+		padding: 30px;
+	}
+	.row {
+	padding: 0 4%;
+}
+	.heading-text {
+		padding: 0 22%;
+}
+	.col {
+	width: 100%;
+	margin: -5% 0 5% 0;
+}
+	.main-nav a {
+		padding:  10px;
+	}
+	.copyright {
+	margin-top: 0px;
+	padding-bottom: 10px;
+	margin-left: -5%;
+}
+}
+
+@media only screen and (max-width: 480px){
+	section{
+		padding: 35px 0;
+	}
+	.heading-text {
+		padding: 0 8%;
+		font-size: 90%;
+}
+}
+
+
